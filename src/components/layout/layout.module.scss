@@ -1,0 +1,11 @@
+.layout {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 50px 50px;
+  padding: var(--gap-l);
+  background-color: var(--background-main);
+}
