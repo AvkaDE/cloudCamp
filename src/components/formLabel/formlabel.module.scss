@@ -23,4 +23,29 @@
       outline: none;
     }
   }
+  select {
+    max-width: 400px;
+    padding-left: 10px;
+    height: 44px;
+    background-color: var(--background-main);
+    border: 1px solid rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    box-sizing: border-box;
+    &:hover {
+      border: 1px solid var(--purple);
+    }
+    &:focus {
+      border: var(--purple) solid 2px;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+    option {
+      height: 44px;
+      background-color: var(--background-main);
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  }
 }

@@ -29,12 +29,14 @@ const MainPage = () => {
     {
       label: 'Номер телефона',
       type: 'tel',
-      placeholder: '+7 999 999 99-99'
+      placeholder: '+7 999 999 99-99',
+      id: 'field-telephone',
     },
     {
       label: 'Email',
       type: 'email',
-      placeholder: 'tim.jennings@example.com'
+      placeholder: 'tim.jennings@example.com',
+      id: 'field-email',
     },
   ]
 
@@ -45,13 +47,13 @@ const MainPage = () => {
   return (
     <div>
       <div className={styles.header__wrapper}>
-        <UserLogo>АИ</UserLogo>
+        <UserLogo>АД</UserLogo>
         <div className={styles.info__wrapper}>
-          <h1>Иван Иванов</h1>
+          <h1>Дмитриков Алексей</h1>
           <div className={styles.contact__wrapper}>
             {contacts.map((item) => {
               return (
-                <ContactItem title={item.title} link={item.link} />
+                <ContactItem key={item.title} title={item.title} link={item.link} />
               )
             })}
           </div>
@@ -60,11 +62,11 @@ const MainPage = () => {
       <div className={styles.form__wrapper}>
         {simpleInputs.map((item) => {
           return (
-            <FormLabel label={item.label} type={item.type} placeholder={item.placeholder} />
+            <FormLabel key={item.id} label={item.label} id={item.id} type={item.type} placeholder={item.placeholder} />
           )
         })}
       </div>
-      <MainButton onClick={() => openCreatePage()}>Начать</MainButton>
+      <MainButton type='button' mode='default' id='button-start' onClick={() => openCreatePage()}>Начать</MainButton>
     </div>
   )
 }

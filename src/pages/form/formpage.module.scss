@@ -1,0 +1,37 @@
+.page_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .form_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .fields_wrapper {
+      display: flex;
+      flex-direction: column;
+      row-gap: 35px;
+      .advantages_wrapper {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-bottom: 10px;
+        }
+        .controlled_field {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 35px;
+          > div {
+            max-width: 440px;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .buttons_wrapper {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

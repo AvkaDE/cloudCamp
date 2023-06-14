@@ -1,8 +1,19 @@
-.default__button {
+.default_button {
   height: 44px;
   min-width: 79px;
   background-color: var(--purple);
   border-radius: 4px;
   color: white;
   border: unset;
+  cursor: pointer;
+}
+
+.outlined_button {
+  height: 44px;
+  min-width: 79px;
+  background-color: white;
+  border-radius: 4px;
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  cursor: pointer;
 }
