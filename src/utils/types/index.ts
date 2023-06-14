@@ -4,19 +4,34 @@ export type TOptionItem = {
   id: string;
 };
 
-type TRadioItems = {
-  title: string;
-  id: string;
-  name: string;
-  value: string;
+export type TRadioItem = {
+  id: number;
+  selected?: boolean;
+  fieldId?: string;
+};
+
+export type TCheckboxItem = {
+  label: number | string;
+  id: number;
+  fieldId: string;
+  selected: boolean;
 };
 
 export type TFormlabelProps = {
   label?: string;
-  type: "text" | "number" | "email" | "tel" | "radio" | "select";
+  type:
+    | "text"
+    | "number"
+    | "email"
+    | "tel"
+    | "radio"
+    | "select"
+    | "textarea"
+    | "checkbox";
   placeholder?: string;
   id?: string;
-  multipleFields?: TOptionItem[];
   optionItems?: TOptionItem[];
-  radioItems?: TRadioItems[];
+  radioItems?: TRadioItem[];
+  selected?: boolean;
+  groupName?: string;
 };
