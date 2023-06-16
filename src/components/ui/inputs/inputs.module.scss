@@ -1,0 +1,35 @@
+input {
+  max-width: 400px;
+  padding-left: 12px;
+  height: 44px;
+  background-color: var(--background-main);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  box-sizing: border-box;
+  &:hover {
+    border: 1px solid var(--purple);
+  }
+  &:focus {
+    border: var(--purple) solid 2px;
+  }
+  &:focus-visible {
+    outline: none;
+  }
+  &[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    border: 1.5px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+  }
+  &[type="radio"] {
+    width: 16px;
+    height: unset;
+  }
+}
+
+.formlabel__wrapper_vertical {
+  display: flex;
+  flex-direction: row;
+  row-gap: 10px;
+  align-items: center;
+}

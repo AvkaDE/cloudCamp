@@ -3,9 +3,8 @@ import styles from "./mainpage.module.scss";
 import MainButton from '../../components/ui/button/mainButton';
 import UserLogo from '../../components/userLogo/userLogo';
 import ContactItem from '../../components/contactItem/contactItem';
-import FormLabel from '../../components/formLabel/formLabel';
-import { TFormlabelProps } from '../../utils/types';
 import { useNavigate } from "react-router-dom";
+import MainInput from '../../components/ui/inputs/mainInput';
 
 const MainPage = () => {
   const navigate = useNavigate()
@@ -22,21 +21,6 @@ const MainPage = () => {
     {
       title: 'Resume',
       link: '#'
-    },
-  ]
-
-  const simpleInputs: TFormlabelProps[] = [
-    {
-      label: 'Номер телефона',
-      type: 'tel',
-      placeholder: '+7 999 999 99-99',
-      id: 'field-telephone',
-    },
-    {
-      label: 'Email',
-      type: 'email',
-      placeholder: 'tim.jennings@example.com',
-      id: 'field-email',
     },
   ]
 
@@ -60,11 +44,8 @@ const MainPage = () => {
         </div>
       </div>
       <div className={styles.form__wrapper}>
-        {simpleInputs.map((item) => {
-          return (
-            <FormLabel key={item.id} label={item.label} id={item.id} type={item.type} placeholder={item.placeholder} />
-          )
-        })}
+        <MainInput type='tel' />
+        <MainInput type='email' />
       </div>
       <MainButton type='button' mode='default' id='button-start' onClick={() => openCreatePage()}>Начать</MainButton>
     </div>

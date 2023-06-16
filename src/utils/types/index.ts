@@ -8,6 +8,7 @@ export type TRadioItem = {
   id: number;
   selected?: boolean;
   fieldId?: string;
+  fieldName?: string;
 };
 
 export type TCheckboxItem = {
@@ -15,6 +16,7 @@ export type TCheckboxItem = {
   id: number;
   fieldId: string;
   selected: boolean;
+  fieldName?: string;
 };
 
 export type TFormlabelProps = {
@@ -34,4 +36,5 @@ export type TFormlabelProps = {
   radioItems?: TRadioItem[];
   selected?: boolean;
   groupName?: string;
+  fieldName?: string;
 };

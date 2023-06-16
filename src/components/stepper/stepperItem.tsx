@@ -1,14 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styles from './stepper.module.scss'
 import { ReactComponent as CompleteIcon } from '../../assets/complete.svg'
 
 type TStepperItemProps = {
   number: number;
+  steps: number
 }
 
-const StepperItem = ({ number }: TStepperItemProps) => {
+const StepperItem = ({ number, steps }: TStepperItemProps) => {
 
-  const [status, setStatus] = useState('default')
+  const status = number === steps ? 'filled' : number > 1 ? 'succes' : 'default'
 
   return (
     status === 'default'
