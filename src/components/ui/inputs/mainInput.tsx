@@ -1,18 +1,17 @@
 import React from 'react';
+import styles from './maininput.module.scss'
 
 const MainInput = ({ type }) => {
-
-  const telPattern = '(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?';
 
   return (
     type === 'tel'
       ?
-      <label className='label__wrapper' htmlFor="field-phone">
+      <label className={styles.label__wrapper} htmlFor="field-phone">
         Номер телефона
-        <input id="field-phone" type="tel" pattern={telPattern} placeholder='Enter your phone'></input>
+        <input id="field-phone" type="tel" pattern="(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?" placeholder='Enter your phone'></input>
       </label>
       :
-      <label className='label__wrapper' htmlFor="field-email">
+      <label className={styles.label__wrapper} htmlFor="field-email">
         Email
         <input id="field-email" type="email" placeholder='tim.jennings@example.com'></input>
       </label>
