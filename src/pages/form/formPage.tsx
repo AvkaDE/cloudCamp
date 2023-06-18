@@ -201,8 +201,8 @@ export default function FormPage() {
                       About
                       <Field name="fieldAbout" as="textarea" id='field-about' label='About' placeholder='Enter something about you' />
                       <div className={styles.about_info}>
-                        {touched.fieldAbout && errors.fieldAbout && <div className={styles.error_tip}>{errors.fieldAbout}</div>}
-                        <span>{values.fieldAbout.length}</span>
+                        <div>{touched.fieldAbout && errors.fieldAbout && <div className={styles.error_tip}>{errors.fieldAbout}</div>}</div>
+                        <div>{values.fieldAbout.length}</div>
                       </div>
                     </label>
                   </>

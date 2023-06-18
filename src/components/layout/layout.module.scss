@@ -1,11 +1,10 @@
 .layout {
+  box-sizing: border-box;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  padding-top: 24px;
   height: 100vh;
-  padding: 50px 50px;
-  padding: var(--gap-l);
   background-color: var(--background-main);
 }

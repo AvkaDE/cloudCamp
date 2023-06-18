@@ -9,16 +9,18 @@
     .fields_wrapper {
       display: flex;
       flex-direction: column;
-      row-gap: 35px;
+      row-gap: 24px;
       .label__wrapper {
         display: flex;
         flex-direction: column;
         row-gap: 10px;
+        max-width: 440px;
         .controlled_field {
           margin-bottom: unset !important;
         }
       }
       .about_info {
+        max-width: 440px;
         display: flex;
         justify-content: space-between;
       }
