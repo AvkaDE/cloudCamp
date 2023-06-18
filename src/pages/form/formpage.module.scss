@@ -14,18 +14,23 @@
         display: flex;
         flex-direction: column;
         row-gap: 10px;
-        .error_tip {
-          color:red
+        .controlled_field {
+          margin-bottom: unset !important;
         }
       }
       .about_info {
         display: flex;
         justify-content: space-between;
       }
-      
+
       .group {
         display: flex;
         flex-direction: column;
+        .group_wrapper {
+          display: flex;
+          flex-direction: column;
+          row-gap: 8px;
+        }
         span {
           margin-bottom: 10px;
         }
@@ -93,4 +98,9 @@
   flex-direction: row;
   row-gap: 10px;
   align-items: center;
+}
+
+.error_tip {
+  color: red;
+  font-size: 11px;
 }

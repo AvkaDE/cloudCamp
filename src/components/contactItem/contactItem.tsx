@@ -12,7 +12,7 @@ const ContactItem = ({ title, link = '' }: TContactProps) => {
   return (
     <div className={styles.contact__item}>
       <FolderLogo />
-      <a href={link} target='__blank'>{title}</a>
+      <a href={title === 'Resume' ? require('../../assets/CVnew.pdf') : link} target='__blank'>{title}</a>
     </div>
   )
 }

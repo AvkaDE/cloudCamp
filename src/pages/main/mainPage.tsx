@@ -4,7 +4,8 @@ import MainButton from '../../components/ui/button/mainButton';
 import UserLogo from '../../components/userLogo/userLogo';
 import ContactItem from '../../components/contactItem/contactItem';
 import { useNavigate } from "react-router-dom";
-import MainInput from '../../components/ui/inputs/mainInput';
+import TelephoneInput from '../../components/ui/inputs/phone/telephoneInput';
+import EmailInput from '../../components/ui/inputs/email/emailInput';
 
 const MainPage = () => {
   const navigate = useNavigate()
@@ -12,15 +13,15 @@ const MainPage = () => {
   const contacts = [
     {
       title: 'Telegram',
-      link: '#'
+      link: 'https://t.me/avkade'
     },
     {
       title: 'Github',
-      link: '#'
+      link: 'https://github.com/AvkaDE'
     },
     {
       title: 'Resume',
-      link: '#'
+      link: '../../assets/CVnew.pdf'
     },
   ]
 
@@ -44,8 +45,8 @@ const MainPage = () => {
         </div>
       </div>
       <div className={styles.form__wrapper}>
-        <MainInput type='tel' />
-        <MainInput type='email' />
+        <TelephoneInput disabled={true} value='9108645298' />
+        <EmailInput disabled={true} value='lol2012pw@yandex.ru' />
       </div>
       <MainButton type='button' mode='default' id='button-start' onClick={() => openCreatePage()}>Начать</MainButton>
     </div>

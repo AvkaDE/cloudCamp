@@ -3,7 +3,7 @@ import styles from './mainbutton.module.scss'
 
 type TButtonProps = {
   children: string;
-  onClick?: () => void;
+  onClick?: (e?: any) => void;
   id: string;
   mode: 'default' | 'outlined'
   type: 'button' | 'submit'

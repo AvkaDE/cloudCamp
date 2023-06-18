@@ -1,4 +1,5 @@
 .line_wrapper {
+  margin-top: 62px;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -12,7 +13,6 @@
   .line_filled {
     position: absolute;
     top: 0;
-    left: 0;
     height: 8px;
     background-color: var(--purple);
     left: 2px;
@@ -20,20 +20,20 @@
 }
 
 .item_filled {
+  margin-top: 34px;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 12px;
   color: var(--purple);
   width: 16px;
-  height: 16px;
+  height: 48px;
   position: relative;
   z-index: 5;
-  background-color: var(--purple);
   border-radius: 50%;
   align-items: center;
   .circle_filled {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: var(--purple);
     position: relative;
@@ -52,20 +52,20 @@
 }
 
 .item_default {
+  margin-top: 34px;
   display: flex;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 12px;
   width: 16px;
   color: #666666;
-  height: 16px;
+  height: 48px;
   position: relative;
   z-index: 5;
-  background-color: #a6a6a6;
   border-radius: 50%;
   align-items: center;
   .circle_default {
-    width: 12px;
-    height: 12px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background-color: #a6a6a6;
   }

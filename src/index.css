@@ -18,15 +18,16 @@ code {
   --background-main: rgba(0, 0, 0, 0.04);
 }
 
-#react-portal {
-  position: absolute;
-  top: 0;
-  background-color: black;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  opacity: 0.5;
-  height: 100%;
-  align-items: center;
+@font-face {
+  font-family: "SB Sans Interface";
+  src: url("SBSansInterface-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "SB Sans Interface";
+  src: url("SBSansInterface-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}

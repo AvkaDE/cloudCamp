@@ -4,7 +4,7 @@ import StepperItem from './stepperItem';
 
 const Stepper = ({ step }) => {
   const calculateWidth = () => {
-    return step === 0 ? '0' : step === 1 ? '50%' : '100%'
+    return step === 0 ? '0' : step === 1 ? '50%' : '98%'
   }
 
   const steps = [1, 2, 3]
@@ -14,7 +14,7 @@ const Stepper = ({ step }) => {
       <div className={styles.line_filled} style={{ width: calculateWidth() }}></div>
       {steps.map((x) => {
         return (
-          <StepperItem key={x} steps={steps.length} number={x} />
+          <StepperItem key={x} step={step} number={x} />
         )
       })}
     </div>

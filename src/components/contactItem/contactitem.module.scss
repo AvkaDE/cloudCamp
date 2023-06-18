@@ -6,3 +6,11 @@
     margin-left: 5px;
   }
 }
+
+@media (max-width: 500px) {
+  .contact__item {
+    svg {
+      display: none;
+    }
+  }
+}

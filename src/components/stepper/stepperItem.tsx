@@ -4,12 +4,12 @@ import { ReactComponent as CompleteIcon } from '../../assets/complete.svg'
 
 type TStepperItemProps = {
   number: number;
-  steps: number
+  step: number;
 }
 
-const StepperItem = ({ number, steps }: TStepperItemProps) => {
+const StepperItem = ({ number, step }: TStepperItemProps) => {
 
-  const status = number === steps ? 'filled' : number > 1 ? 'succes' : 'default'
+  const status = number <= step + 1 ? number <= step ? 'succes' : 'filled' : 'default'
 
   return (
     status === 'default'
